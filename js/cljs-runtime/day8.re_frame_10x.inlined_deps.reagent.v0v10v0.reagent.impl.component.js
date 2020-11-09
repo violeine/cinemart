@@ -377,10 +377,10 @@ break;
 case "componentWillUnmount":
 return (function day8$re_frame_10x$inlined_deps$reagent$v0v10v0$reagent$impl$component$custom_wrapper_$_componentWillUnmount(){
 var c = this;
-var G__15612_15622 = goog.object.get(c,"cljsRatom");
-if((G__15612_15622 == null)){
+var G__15612_15623 = goog.object.get(c,"cljsRatom");
+if((G__15612_15623 == null)){
 } else {
-day8.re_frame_10x.inlined_deps.reagent.v0v10v0.reagent.ratom.dispose_BANG_(G__15612_15622);
+day8.re_frame_10x.inlined_deps.reagent.v0v10v0.reagent.ratom.dispose_BANG_(G__15612_15623);
 }
 
 day8.re_frame_10x.inlined_deps.reagent.v0v10v0.reagent.impl.batching.mark_rendered(c);

@@ -428,8 +428,8 @@ return and__4115__auto__;
 })();
 if(cljs.core.truth_(temp__5733__auto____$1)){
 var child = temp__5733__auto____$1;
-var G__18605 = clojure.zip.rightmost(child);
-loc__$1 = G__18605;
+var G__18604 = clojure.zip.rightmost(child);
+loc__$1 = G__18604;
 continue;
 } else {
 return loc__$1;
@@ -475,8 +475,8 @@ return and__4115__auto__;
 })();
 if(cljs.core.truth_(temp__5733__auto__)){
 var child = temp__5733__auto__;
-var G__18608 = clojure.zip.rightmost(child);
-loc__$1 = G__18608;
+var G__18605 = clojure.zip.rightmost(child);
+loc__$1 = G__18605;
 continue;
 } else {
 return loc__$1;

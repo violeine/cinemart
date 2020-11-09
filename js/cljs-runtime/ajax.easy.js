@@ -183,12 +183,12 @@ return or__4126__auto__;
 return cljs.core.deref(ajax.easy.default_error_handler);
 }
 })();
-return (function ajax$easy$transform_handler_$_easy_handler(p__27165){
-var vec__27166 = p__27165;
-var ok = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__27166,(0),null);
-var result = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__27166,(1),null);
-var fexpr__27169_27176 = (cljs.core.truth_(ok)?h:e);
-(fexpr__27169_27176.cljs$core$IFn$_invoke$arity$1 ? fexpr__27169_27176.cljs$core$IFn$_invoke$arity$1(result) : fexpr__27169_27176.call(null,result));
+return (function ajax$easy$transform_handler_$_easy_handler(p__27168){
+var vec__27170 = p__27168;
+var ok = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__27170,(0),null);
+var result = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__27170,(1),null);
+var fexpr__27173_27189 = (cljs.core.truth_(ok)?h:e);
+(fexpr__27173_27189.cljs$core$IFn$_invoke$arity$1 ? fexpr__27173_27189.cljs$core$IFn$_invoke$arity$1(result) : fexpr__27173_27189.call(null,result));
 
 if(cljs.core.fn_QMARK_(finally$)){
 return (finally$.cljs$core$IFn$_invoke$arity$0 ? finally$.cljs$core$IFn$_invoke$arity$0() : finally$.call(null));
@@ -197,15 +197,15 @@ return null;
 }
 });
 });
-ajax.easy.transform_opts = (function ajax$easy$transform_opts(p__27170){
-var map__27171 = p__27170;
-var map__27171__$1 = (((((!((map__27171 == null))))?(((((map__27171.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__27171.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.hash_map,map__27171):map__27171);
-var opts = map__27171__$1;
-var method = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__27171__$1,new cljs.core.Keyword(null,"method","method",55703592));
-var format = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__27171__$1,new cljs.core.Keyword(null,"format","format",-1306924766));
-var response_format = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__27171__$1,new cljs.core.Keyword(null,"response-format","response-format",1664465322));
-var params = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__27171__$1,new cljs.core.Keyword(null,"params","params",710516235));
-var body = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__27171__$1,new cljs.core.Keyword(null,"body","body",-2049205669));
+ajax.easy.transform_opts = (function ajax$easy$transform_opts(p__27175){
+var map__27176 = p__27175;
+var map__27176__$1 = (((((!((map__27176 == null))))?(((((map__27176.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__27176.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.hash_map,map__27176):map__27176);
+var opts = map__27176__$1;
+var method = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__27176__$1,new cljs.core.Keyword(null,"method","method",55703592));
+var format = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__27176__$1,new cljs.core.Keyword(null,"format","format",-1306924766));
+var response_format = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__27176__$1,new cljs.core.Keyword(null,"response-format","response-format",1664465322));
+var params = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__27176__$1,new cljs.core.Keyword(null,"params","params",710516235));
+var body = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__27176__$1,new cljs.core.Keyword(null,"body","body",-2049205669));
 
 var needs_format = (((body == null)) && (cljs.core.not_EQ_.cljs$core$IFn$_invoke$arity$2(method,"GET")));
 var rf = (cljs.core.truth_((function (){var or__4126__auto__ = format;

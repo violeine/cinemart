@@ -54,10 +54,10 @@ var prefix = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__27088__$1,new cljs
 var keywords_QMARK_ = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__27088__$1,new cljs.core.Keyword(null,"keywords?","keywords?",764949733));
 var raw = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__27088__$1,new cljs.core.Keyword(null,"raw","raw",1604651272));
 return ajax.interceptors.map__GT_ResponseFormat(new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"read","read",1140058661),(function ajax$json$make_json_response_format_$_json_response_format_$_json_read_response_format(xhrio){
-var G__27090 = raw;
-var G__27091 = keywords_QMARK_;
-var G__27092 = ajax.json.strip_prefix(prefix,ajax.protocols._body(xhrio));
-return (read_json.cljs$core$IFn$_invoke$arity$3 ? read_json.cljs$core$IFn$_invoke$arity$3(G__27090,G__27091,G__27092) : read_json.call(null,G__27090,G__27091,G__27092));
+var G__27093 = raw;
+var G__27094 = keywords_QMARK_;
+var G__27095 = ajax.json.strip_prefix(prefix,ajax.protocols._body(xhrio));
+return (read_json.cljs$core$IFn$_invoke$arity$3 ? read_json.cljs$core$IFn$_invoke$arity$3(G__27093,G__27094,G__27095) : read_json.call(null,G__27093,G__27094,G__27095));
 }),new cljs.core.Keyword(null,"description","description",-1428560544),["JSON",(cljs.core.truth_(prefix)?[" prefix '",cljs.core.str.cljs$core$IFn$_invoke$arity$1(prefix),"'"].join(''):null),(cljs.core.truth_(keywords_QMARK_)?" keywordize":null)].join(''),new cljs.core.Keyword(null,"content-type","content-type",-508222634),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, ["application/json"], null)], null));
 });
 ajax$json$make_json_response_format_$_json_response_format = function(p__27087){

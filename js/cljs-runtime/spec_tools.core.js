@@ -117,7 +117,7 @@ return spec_tools$core$Coercion$_coerce$dyn_28657(this$,value,transformer,option
  */
 spec_tools.core.Transformer = function(){};
 
-var spec_tools$core$Transformer$_name$dyn_28661 = (function (this$){
+var spec_tools$core$Transformer$_name$dyn_28658 = (function (this$){
 var x__4428__auto__ = (((this$ == null))?null:this$);
 var m__4429__auto__ = (spec_tools.core._name[goog.typeOf(x__4428__auto__)]);
 if((!((m__4429__auto__ == null)))){
@@ -135,11 +135,11 @@ spec_tools.core._name = (function spec_tools$core$_name(this$){
 if((((!((this$ == null)))) && ((!((this$.spec_tools$core$Transformer$_name$arity$1 == null)))))){
 return this$.spec_tools$core$Transformer$_name$arity$1(this$);
 } else {
-return spec_tools$core$Transformer$_name$dyn_28661(this$);
+return spec_tools$core$Transformer$_name$dyn_28658(this$);
 }
 });
 
-var spec_tools$core$Transformer$_options$dyn_28662 = (function (this$){
+var spec_tools$core$Transformer$_options$dyn_28659 = (function (this$){
 var x__4428__auto__ = (((this$ == null))?null:this$);
 var m__4429__auto__ = (spec_tools.core._options[goog.typeOf(x__4428__auto__)]);
 if((!((m__4429__auto__ == null)))){
@@ -157,11 +157,11 @@ spec_tools.core._options = (function spec_tools$core$_options(this$){
 if((((!((this$ == null)))) && ((!((this$.spec_tools$core$Transformer$_options$arity$1 == null)))))){
 return this$.spec_tools$core$Transformer$_options$arity$1(this$);
 } else {
-return spec_tools$core$Transformer$_options$dyn_28662(this$);
+return spec_tools$core$Transformer$_options$dyn_28659(this$);
 }
 });
 
-var spec_tools$core$Transformer$_encoder$dyn_28663 = (function (this$,spec,value){
+var spec_tools$core$Transformer$_encoder$dyn_28660 = (function (this$,spec,value){
 var x__4428__auto__ = (((this$ == null))?null:this$);
 var m__4429__auto__ = (spec_tools.core._encoder[goog.typeOf(x__4428__auto__)]);
 if((!((m__4429__auto__ == null)))){
@@ -179,11 +179,11 @@ spec_tools.core._encoder = (function spec_tools$core$_encoder(this$,spec,value){
 if((((!((this$ == null)))) && ((!((this$.spec_tools$core$Transformer$_encoder$arity$3 == null)))))){
 return this$.spec_tools$core$Transformer$_encoder$arity$3(this$,spec,value);
 } else {
-return spec_tools$core$Transformer$_encoder$dyn_28663(this$,spec,value);
+return spec_tools$core$Transformer$_encoder$dyn_28660(this$,spec,value);
 }
 });
 
-var spec_tools$core$Transformer$_decoder$dyn_28664 = (function (this$,spec,value){
+var spec_tools$core$Transformer$_decoder$dyn_28661 = (function (this$,spec,value){
 var x__4428__auto__ = (((this$ == null))?null:this$);
 var m__4429__auto__ = (spec_tools.core._decoder[goog.typeOf(x__4428__auto__)]);
 if((!((m__4429__auto__ == null)))){
@@ -201,7 +201,7 @@ spec_tools.core._decoder = (function spec_tools$core$_decoder(this$,spec,value){
 if((((!((this$ == null)))) && ((!((this$.spec_tools$core$Transformer$_decoder$arity$3 == null)))))){
 return this$.spec_tools$core$Transformer$_decoder$arity$3(this$,spec,value);
 } else {
-return spec_tools$core$Transformer$_decoder$dyn_28664(this$,spec,value);
+return spec_tools$core$Transformer$_decoder$dyn_28661(this$,spec,value);
 }
 });
 
@@ -243,14 +243,14 @@ return spec_tools$core$Transformer$_decoder$dyn_28664(this$,spec,value);
  */
 spec_tools.core.type_transformer = (function spec_tools$core$type_transformer(var_args){
 var args__4742__auto__ = [];
-var len__4736__auto___28665 = arguments.length;
-var i__4737__auto___28666 = (0);
+var len__4736__auto___28662 = arguments.length;
+var i__4737__auto___28663 = (0);
 while(true){
-if((i__4737__auto___28666 < len__4736__auto___28665)){
-args__4742__auto__.push((arguments[i__4737__auto___28666]));
+if((i__4737__auto___28663 < len__4736__auto___28662)){
+args__4742__auto__.push((arguments[i__4737__auto___28663]));
 
-var G__28667 = (i__4737__auto___28666 + (1));
-i__4737__auto___28666 = G__28667;
+var G__28664 = (i__4737__auto___28663 + (1));
+i__4737__auto___28663 = G__28664;
 continue;
 } else {
 }
@@ -1481,8 +1481,8 @@ if(cljs.core.truth_(spec_tools.core.spec_QMARK_(x))){
 return x;
 } else {
 if((x instanceof cljs.core.Keyword)){
-var G__28721 = cljs.spec.alpha.get_spec(x);
-x = G__28721;
+var G__28734 = cljs.spec.alpha.get_spec(x);
+x = G__28734;
 continue;
 } else {
 return spec_tools.core.create_spec(new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"spec","spec",347520401),x], null));

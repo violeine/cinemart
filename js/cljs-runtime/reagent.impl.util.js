@@ -28,12 +28,12 @@ if(typeof dashed === 'string'){
 return dashed;
 } else {
 var name_str = cljs.core.name(dashed);
-var vec__20413 = clojure.string.split.cljs$core$IFn$_invoke$arity$2(name_str,/-/);
-var seq__20414 = cljs.core.seq(vec__20413);
-var first__20415 = cljs.core.first(seq__20414);
-var seq__20414__$1 = cljs.core.next(seq__20414);
-var start = first__20415;
-var parts = seq__20414__$1;
+var vec__20418 = clojure.string.split.cljs$core$IFn$_invoke$arity$2(name_str,/-/);
+var seq__20419 = cljs.core.seq(vec__20418);
+var first__20420 = cljs.core.first(seq__20419);
+var seq__20419__$1 = cljs.core.next(seq__20419);
+var start = first__20420;
+var parts = seq__20419__$1;
 if(cljs.core.truth_((reagent.impl.util.dont_camel_case.cljs$core$IFn$_invoke$arity$1 ? reagent.impl.util.dont_camel_case.cljs$core$IFn$_invoke$arity$1(start) : reagent.impl.util.dont_camel_case.call(null,start)))){
 return name_str;
 } else {
@@ -47,12 +47,12 @@ return dashed;
 } else {
 var name_str = cljs.core.name(dashed);
 var name_str__$1 = clojure.string.replace(name_str,/(unsafe|UNSAFE)[-_]/,"UNSAFE_");
-var vec__20416 = clojure.string.split.cljs$core$IFn$_invoke$arity$2(name_str__$1,/-/);
-var seq__20417 = cljs.core.seq(vec__20416);
-var first__20418 = cljs.core.first(seq__20417);
-var seq__20417__$1 = cljs.core.next(seq__20417);
-var start = first__20418;
-var parts = seq__20417__$1;
+var vec__20421 = clojure.string.split.cljs$core$IFn$_invoke$arity$2(name_str__$1,/-/);
+var seq__20422 = cljs.core.seq(vec__20421);
+var first__20423 = cljs.core.first(seq__20422);
+var seq__20422__$1 = cljs.core.next(seq__20422);
+var start = first__20423;
+var parts = seq__20422__$1;
 return cljs.core.apply.cljs$core$IFn$_invoke$arity$3(cljs.core.str,start,cljs.core.map.cljs$core$IFn$_invoke$arity$2(reagent.impl.util.capitalize,parts));
 }
 });
@@ -317,10 +317,10 @@ return G__20443;
 })()
 );
 
-(reagent.impl.util.PartialFn.prototype.apply = (function (self__,args20426){
+(reagent.impl.util.PartialFn.prototype.apply = (function (self__,args20430){
 var self__ = this;
 var self____$1 = this;
-return self____$1.call.apply(self____$1,[self____$1].concat(cljs.core.aclone(args20426)));
+return self____$1.call.apply(self____$1,[self____$1].concat(cljs.core.aclone(args20430)));
 }));
 
 (reagent.impl.util.PartialFn.prototype.cljs$core$IFn$_invoke$arity$0 = (function (){

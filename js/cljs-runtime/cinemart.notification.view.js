@@ -35,8 +35,8 @@ return re_frame.core.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.co
 });})(i__29157,map__29161,map__29161__$1,map__29162,map__29162__$1,css,icon,map__29159,map__29159__$1,uuid,text,class$,type,c__4527__auto__,size__4528__auto__,b__29158,s__29156__$2,temp__5735__auto__,notis))
 ], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cinemart.components.icons.i_x,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"class","class",-2030961996),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, ["w-4"], null)], null)], null)], null)], null)], null)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"key","key",-1516042587),uuid], null)));
 
-var G__29171 = (i__29157 + (1));
-i__29157 = G__29171;
+var G__29175 = (i__29157 + (1));
+i__29157 = G__29175;
 continue;
 } else {
 return true;

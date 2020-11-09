@@ -33,14 +33,14 @@ ajax.core.detect_response_format = ajax.easy.detect_response_format;
  */
 ajax.core.GET = (function ajax$core$GET(var_args){
 var args__4742__auto__ = [];
-var len__4736__auto___27258 = arguments.length;
-var i__4737__auto___27259 = (0);
+var len__4736__auto___27257 = arguments.length;
+var i__4737__auto___27258 = (0);
 while(true){
-if((i__4737__auto___27259 < len__4736__auto___27258)){
-args__4742__auto__.push((arguments[i__4737__auto___27259]));
+if((i__4737__auto___27258 < len__4736__auto___27257)){
+args__4742__auto__.push((arguments[i__4737__auto___27258]));
 
-var G__27260 = (i__4737__auto___27259 + (1));
-i__4737__auto___27259 = G__27260;
+var G__27259 = (i__4737__auto___27258 + (1));
+i__4737__auto___27258 = G__27259;
 continue;
 } else {
 }
@@ -81,14 +81,14 @@ return self__4723__auto__.cljs$core$IFn$_invoke$arity$variadic(G__27240,seq27239
  */
 ajax.core.HEAD = (function ajax$core$HEAD(var_args){
 var args__4742__auto__ = [];
-var len__4736__auto___27261 = arguments.length;
-var i__4737__auto___27262 = (0);
+var len__4736__auto___27260 = arguments.length;
+var i__4737__auto___27261 = (0);
 while(true){
-if((i__4737__auto___27262 < len__4736__auto___27261)){
-args__4742__auto__.push((arguments[i__4737__auto___27262]));
+if((i__4737__auto___27261 < len__4736__auto___27260)){
+args__4742__auto__.push((arguments[i__4737__auto___27261]));
 
-var G__27263 = (i__4737__auto___27262 + (1));
-i__4737__auto___27262 = G__27263;
+var G__27262 = (i__4737__auto___27261 + (1));
+i__4737__auto___27261 = G__27262;
 continue;
 } else {
 }
@@ -129,14 +129,14 @@ return self__4723__auto__.cljs$core$IFn$_invoke$arity$variadic(G__27242,seq27241
  */
 ajax.core.POST = (function ajax$core$POST(var_args){
 var args__4742__auto__ = [];
-var len__4736__auto___27264 = arguments.length;
-var i__4737__auto___27265 = (0);
+var len__4736__auto___27263 = arguments.length;
+var i__4737__auto___27264 = (0);
 while(true){
-if((i__4737__auto___27265 < len__4736__auto___27264)){
-args__4742__auto__.push((arguments[i__4737__auto___27265]));
+if((i__4737__auto___27264 < len__4736__auto___27263)){
+args__4742__auto__.push((arguments[i__4737__auto___27264]));
 
-var G__27266 = (i__4737__auto___27265 + (1));
-i__4737__auto___27265 = G__27266;
+var G__27265 = (i__4737__auto___27264 + (1));
+i__4737__auto___27264 = G__27265;
 continue;
 } else {
 }

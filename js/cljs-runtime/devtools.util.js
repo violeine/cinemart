@@ -246,13 +246,13 @@ var f = (function (){
 return null;
 });
 var G__12025_12051 = f;
-var target__9471__auto___12052 = G__12025_12051;
-if(cljs.core.truth_(target__9471__auto___12052)){
+var target__9415__auto___12052 = G__12025_12051;
+if(cljs.core.truth_(target__9415__auto___12052)){
 } else {
-throw (new Error(["Assert failed: ",["unable to locate object path ",null," in ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__12025_12051)].join(''),"\n","target__9471__auto__"].join('')));
+throw (new Error(["Assert failed: ",["unable to locate object path ",null," in ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__12025_12051)].join(''),"\n","target__9415__auto__"].join('')));
 }
 
-(target__9471__auto___12052["toString"] = (function (){
+(target__9415__auto___12052["toString"] = (function (){
 (devtools.util._STAR_console_open_STAR_ = true);
 
 setTimeout(devtools.util.check_custom_formatters_active_BANG_,(0));

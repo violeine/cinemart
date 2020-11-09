@@ -1,15 +1,15 @@
 goog.provide('day8.re_frame.debux.common.util');
 day8.re_frame.debux.common.util.map__GT_seq = (function day8$re_frame$debux$common$util$map__GT_seq(m){
-return cljs.core.reduce.cljs$core$IFn$_invoke$arity$3((function (r,p__24526){
-var vec__24527 = p__24526;
-var k = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__24527,(0),null);
-var v = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__24527,(1),null);
+return cljs.core.reduce.cljs$core$IFn$_invoke$arity$3((function (r,p__24515){
+var vec__24516 = p__24515;
+var k = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__24516,(0),null);
+var v = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__24516,(1),null);
 return cljs.core.concat.cljs$core$IFn$_invoke$arity$2(r,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [k,v], null));
 }),cljs.core.PersistentVector.EMPTY,m);
 });
 day8.re_frame.debux.common.util.sequential_zip = (function day8$re_frame$debux$common$util$sequential_zip(root){
-return clojure.zip.zipper((function (p1__24532_SHARP_){
-return ((cljs.core.sequential_QMARK_(p1__24532_SHARP_)) || (cljs.core.map_QMARK_(p1__24532_SHARP_)));
+return clojure.zip.zipper((function (p1__24519_SHARP_){
+return ((cljs.core.sequential_QMARK_(p1__24519_SHARP_)) || (cljs.core.map_QMARK_(p1__24519_SHARP_)));
 }),(function (x){
 if(cljs.core.map_QMARK_(x)){
 return cljs.core.with_meta(day8.re_frame.debux.common.util.map__GT_seq(x),cljs.core.meta(x));
@@ -22,10 +22,10 @@ if(cljs.core.vector_QMARK_(x)){
 return cljs.core.with_meta(cljs.core.vec(children),cljs.core.meta(x));
 } else {
 if(cljs.core.map_QMARK_(x)){
-return cljs.core.with_meta(cljs.core.reduce.cljs$core$IFn$_invoke$arity$3((function (r,p__24534){
-var vec__24535 = p__24534;
-var k = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__24535,(0),null);
-var v = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__24535,(1),null);
+return cljs.core.with_meta(cljs.core.reduce.cljs$core$IFn$_invoke$arity$3((function (r,p__24528){
+var vec__24529 = p__24528;
+var k = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__24529,(0),null);
+var v = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__24529,(1),null);
 return cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(r,k,v);
 }),cljs.core.PersistentArrayMap.EMPTY,cljs.core.partition.cljs$core$IFn$_invoke$arity$2((2),children)),cljs.core.meta(x));
 } else {
@@ -73,10 +73,10 @@ var gen_name = (function (result,name){
 if((!(cljs.core.contains_QMARK_(result,[cljs.core.str.cljs$core$IFn$_invoke$arity$1(name),"#"].join(''))))){
 return [cljs.core.str.cljs$core$IFn$_invoke$arity$1(name),"#"].join('');
 } else {
-return cljs.core.first(cljs.core.filter.cljs$core$IFn$_invoke$arity$2((function (p1__24545_SHARP_){
-return (!(cljs.core.contains_QMARK_(result,p1__24545_SHARP_)));
-}),cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p1__24544_SHARP_){
-return [cljs.core.str.cljs$core$IFn$_invoke$arity$1(name),cljs.core.str.cljs$core$IFn$_invoke$arity$1(p1__24544_SHARP_),"#"].join('');
+return cljs.core.first(cljs.core.filter.cljs$core$IFn$_invoke$arity$2((function (p1__24534_SHARP_){
+return (!(cljs.core.contains_QMARK_(result,p1__24534_SHARP_)));
+}),cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p1__24532_SHARP_){
+return [cljs.core.str.cljs$core$IFn$_invoke$arity$1(name),cljs.core.str.cljs$core$IFn$_invoke$arity$1(p1__24532_SHARP_),"#"].join('');
 }),cljs.core.iterate(cljs.core.inc,(2)))));
 }
 });
@@ -117,29 +117,29 @@ return cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(result,sym_name,new_name);
 return result;
 }
 }
-}),mapping,cljs.core.map.cljs$core$IFn$_invoke$arity$2(cljs.core.name,cljs.core.filter.cljs$core$IFn$_invoke$arity$2((function (p1__24546_SHARP_){
-return (((p1__24546_SHARP_ instanceof cljs.core.Symbol)) && ((cljs.core.namespace(p1__24546_SHARP_) == null)));
+}),mapping,cljs.core.map.cljs$core$IFn$_invoke$arity$2(cljs.core.name,cljs.core.filter.cljs$core$IFn$_invoke$arity$2((function (p1__24535_SHARP_){
+return (((p1__24535_SHARP_ instanceof cljs.core.Symbol)) && ((cljs.core.namespace(p1__24535_SHARP_) == null)));
 }),day8.re_frame.debux.common.util.form_tree_seq(form))));
 });
 /**
  * Tidy up fully qualified names that have aliases in the existing namespace.
  */
-day8.re_frame.debux.common.util.with_symbols_names = (function day8$re_frame$debux$common$util$with_symbols_names(form,p__24548,mapping){
-var map__24549 = p__24548;
-var map__24549__$1 = (((((!((map__24549 == null))))?(((((map__24549.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__24549.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.hash_map,map__24549):map__24549);
-var state = map__24549__$1;
-var context = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__24549__$1,new cljs.core.Keyword(null,"context","context",-830191113));
-var refers = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__24549__$1,new cljs.core.Keyword(null,"refers","refers",158076809));
-var aliases = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__24549__$1,new cljs.core.Keyword(null,"aliases","aliases",1346874714));
+day8.re_frame.debux.common.util.with_symbols_names = (function day8$re_frame$debux$common$util$with_symbols_names(form,p__24539,mapping){
+var map__24540 = p__24539;
+var map__24540__$1 = (((((!((map__24540 == null))))?(((((map__24540.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__24540.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.hash_map,map__24540):map__24540);
+var state = map__24540__$1;
+var context = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__24540__$1,new cljs.core.Keyword(null,"context","context",-830191113));
+var refers = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__24540__$1,new cljs.core.Keyword(null,"refers","refers",158076809));
+var aliases = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__24540__$1,new cljs.core.Keyword(null,"aliases","aliases",1346874714));
 return cljs.core.reduce.cljs$core$IFn$_invoke$arity$3((function (result,sym){
 if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2("clojure.core",cljs.core.namespace(sym))){
 return cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(result,cljs.core.pr_str.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([sym], 0)),cljs.core.name(sym));
 } else {
 return result;
 }
-}),mapping,cljs.core.filter.cljs$core$IFn$_invoke$arity$2((function (p1__24547_SHARP_){
-if((p1__24547_SHARP_ instanceof cljs.core.Symbol)){
-return cljs.core.namespace(p1__24547_SHARP_);
+}),mapping,cljs.core.filter.cljs$core$IFn$_invoke$arity$2((function (p1__24538_SHARP_){
+if((p1__24538_SHARP_ instanceof cljs.core.Symbol)){
+return cljs.core.namespace(p1__24538_SHARP_);
 } else {
 return false;
 }
