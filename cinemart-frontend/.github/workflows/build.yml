@@ -1,0 +1,49 @@
+name: build static page
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/checkout@v2
+      with:
+        repository: violeine/cinemart
+        token: ${{secrets.GH_TOKEN}}
+        path: build
+    - name: create api key and use fragment for github.io
+      run: |
+        cp src/cinemart/env.example.cljs src/cinemart/env.cljs
+        sed -i "s/api_key/${{ secrets.API_KEY }}/g" src/cinemart/env.cljs
+        sed -i "s/:use-fragment false/:use-fragment true/g" src/cinemart/router.cljs
+    - name: Use node.js
+      uses: actions/setup-node@v1
+      with:
+          node-version: '14.x'
+    - name: Install deps
+      run: |
+        npm install
+        npm run build-tw
+        npx shadow-cljs release app
+    - name: Push to public repo
+      run: |
+        cp -a public/. build/
+        cd build
+        sed -i "s+/js/main.js+https://violeine.github.io/cinemart/js/main.js+g" index.html
+        sed -i "s+/css/main.css+https://violeine.github.io/cinemart/css/main.css+g" index.html
+        git config user.name github.actions
+        git config user.email github-actions@github.com
+        git add .
+        git commit -m "generated"
+        git push
+
+
+
+
+
+
+
+
+

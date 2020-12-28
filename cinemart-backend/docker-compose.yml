@@ -1,0 +1,24 @@
+version: '3.8'
+services:
+  db:
+    container_name: cinemart_db
+    image: postgres
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: cinemart
+    volumes:
+      - pdb:/var/lib/postgresql/data
+  server:
+    container_name: cinemart_server
+    build: .
+    ports:
+      - 4000:4000
+      - 13370:13370
+    volumes:
+      - .:/usr/src/app
+    command: ["./wait-for-it.sh", "db:5432", "--", "clojure", "-M:docker-repl"]
+volumes:
+  pdb:

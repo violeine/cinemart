@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+.btn {
+  @apply inline-block px-1 py-2 rounded-sm;
+}
+
+@tailwind utilities;
+
+.h-96 {
+  height: 24rem;
+}
+
+.accent-effect__corner {
+  transition: transform 0.1s;
+  height: 0;
+  width: 0;
+}
+
+.accent-effect__corner-top {
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-right: 6px solid currentcolor;
+  transform-origin: center left;
+  transform: translateY(6px) scale(0);
+}
+
+.accent-effect__corner-bottom {
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid currentcolor;
+  transform-origin: bottom center;
+  transform: translateX(6px) scale(0);
+}
+.accent-effect__edge {
+  @apply bg-current;
+  transition: transform 0.1s;
+  transform-origin: 0 100%;
+}
+.accent-effect__edge-left {
+  width: 6px;
+  transform: scaleX(0);
+}
+
+.accent-effect__edge-bottom {
+  height: 6px;
+  transform: scaleY(0);
+}
+.accent-effect__children {
+  transition: transform 0.1s;
+}
+
+.accent-effect:hover .accent-effect__corner-top {
+  transform: translateY(-6px) scale(1);
+  transition-delay: 75ms;
+}
+
+.accent-effect:hover .accent-effect__corner-bottom {
+  transform: translateX(6px) scale(1);
+  transition-delay: 75ms;
+}
+
+.accent-effect:hover .accent-effect__edge-left {
+  transform: scaleX(1);
+  transition-delay: 75ms;
+}
+
+.accent-effect:hover .accent-effect__edge-bottom {
+  transform: scaleY(1);
+  transition-delay: 75ms;
+}
+.accent-effect:hover .accent-effect__children {
+  transform: translate3d(6px, -6px, 0);
+  transition-delay: 75ms;
+}
+/*! purgecss start ignore */
+.slide-enter {
+  transform: translateX(105%);
+}
+
+.slide-enter.slide-enter-active {
+  transform: translateX(0);
+  transition: transform 300ms;
+}
+
+.slide-exit {
+  transform: translateX(0);
+}
+
+.slide-exit.slide-exit-active {
+  transform: translateX(105%);
+  transition: transform 300ms;
+}
+
+.overlay-enter {
+  transform: translate(-50%, -50%);
+}
+
+.overlay-enter.overlay-enter-active {
+  transform: translate(-50%, -50%);
+  transition: transform 300ms;
+}
+
+.overlay-enter-done {
+  transform: translate(-50%, -50%);
+}
+.overlay-exit {
+  transform: translate(-50%, -50%);
+}
+
+.overlay-exit.overlay-exit-active {
+  transform: translate(-50%, -380%);
+  transition: transform 300ms;
+}
+
+::-webkit-scrollbar {
+  @apply w-2 h-2;
+}
+::-webkit-scrollbar-thumb {
+  @apply rounded;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-500;
+}
+::-webkit-scrollbar-track {
+  @apply bg-gray-300 rounded;
+}
+/*! purgecss end ignore */
